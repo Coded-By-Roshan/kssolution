@@ -4,7 +4,7 @@ import datetime
 # Create your models here.
 
 class logger(models.Model):
-    wo_type = models.CharField(max_length=50)
+    # wo_type = models.CharField(max_length=50)
     name = models.CharField(max_length=50)
     quantity = models.IntegerField()
     e_date = models.DateField()
