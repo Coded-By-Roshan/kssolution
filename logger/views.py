@@ -21,7 +21,6 @@ import datetime
 
 
 def index(request):
-
     if request.method == 'POST':
         wo_type = request.POST['wo_type']
         name = request.POST['name']

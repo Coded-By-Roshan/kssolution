@@ -20,7 +20,6 @@ urlpatterns = [
     path('logger/api/web/get/add_employee',views.api_add_employee,name="add"),
     path('logger/api/web/get/get_id',views.api_get_id,name="getId"),
     path('logger/api/web/post/change_password',views.api_change_password,name="change_password"),
-
     #App
     path('kathi/mobile/loginapi', csrf_exempt(views.loginapi), name='loginapi'),
     path('kathi/mobile/creatework', csrf_exempt(views.creatework), name='creatework'),

@@ -1,22 +1,28 @@
 from django.db import models
 import datetime
 
+# from django.forms import CharField
+
 # Create your models here.
 
-class logger(models.Model):
-    # wo_type = models.CharField(max_length=50)
-    name = models.CharField(max_length=50)
-    quantity = models.IntegerField()
-    e_date = models.DateField()
-    wo_issuedate = models.DateField()
-    accepted_by =models.CharField(max_length=50)
-    customer = models.CharField(max_length=50)
-    remarks = models.CharField(max_length=200)
 
 class employee_rating(models.Model):
     date = models.DateField(default=datetime.datetime(2000, 1, 1))
     rating = models. IntegerField()
     emp_id = models.IntegerField()
+
+class logger(models.Model):
+    # wo = models.CharField(max_length=50, default="",blank=True, null=True)
+    name = models.CharField(max_length=50, default="", blank=True, null=True)
+    quantity = models.IntegerField()
+    e_date = models.DateField()
+    wo_issuedate = models.DateField()
+    accepted_by =models.CharField(max_length=50, default="", blank=True, null=True)
+    customer = models.CharField(max_length=50, default="", blank=True, null=True)
+    remarks = models.CharField(max_length=200, default="", blank=True, null=True)
+
+
+
 
 class model_rating(models.Model):
     date = models.DateField(default=datetime.datetime(2000, 1, 1))

@@ -161,15 +161,15 @@ EMAIL_HOST_USER = 'iotetollteam3@gmail.com'
 EMAIL_HOST_PASSWORD = "arvcksrk" 
 
 # FOR CORS
-# CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = False
 
-# ALLOWED_HOSTS = ['127.0.0.1','http://127.0.0.1/*', 'kssolutions.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','http://127.0.0.1/*', 'kssolutions.herokuapp.com']
 
-# CORS_ORIGIN_WHITELIST = ['http://localhost:3000','http://127.0.0.1:8000']
+CORS_ORIGIN_WHITELIST = ['http://localhost:3000','http://127.0.0.1:8000']
 
-# CSRF_TRUSTED_ORIGINS = ['localhost:3000','127.0.0.1:8000']
-# CORS_ORIGIN_WHITELIST = (
-#        'http://localhost:3000', 'http://127.0.0.1:8000'
-# )
+CSRF_TRUSTED_ORIGINS = ['localhost:3000','127.0.0.1:8000']
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000', 'http://127.0.0.1:8000'
+)
 
 django_heroku.settings(locals())
